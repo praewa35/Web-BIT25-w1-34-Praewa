@@ -9,7 +9,19 @@
     <h1>งานที่1 แพรวา พัฒนพูนผล BIT.2/5 เลขที่34</h1>
 
     <form action="">
-        <label for=""></label>
+        <label for="">เลขแม่สูตรคูณ</label> <br>
+        <input type="number" name="num" id="">
+    
+        <input tpye="submit" value="คำนวณ">
     </form>
+
+    <?php 
+        if(isset($_GET["num"])){
+            $num = $_GET["num"];
+
+            echo "สูตรคูณแม่" . $num;
+        }
+    ?>
+    
 </body>
 </html>
