@@ -8,9 +8,9 @@
 </head>
 <body>
     <h1>งานที่1 แพรวา พัฒนพูนผล BIT.2/5 เลขที่34</h1>
-
+    
     <div>
-        <a href="while.php">While Loop</a>
+        <a href="index.php">For Loop</a>
         <form action="">
             <label for="">เลขแม่สูตรคูณ</label> <br>
             <input type="number" name="num" id="">
@@ -18,19 +18,21 @@
             <input type="submit" value="คำนวณ">
         </form>
 
-        <?php 
-            if(isset($_GET["num"])){
+        <?php
+            if (isset($_GET["num"])){
                 $num = $_GET["num"];
 
                 echo "สูตรคูณแม่" . $num . "<br>";
 
-                //. เริ่มต้น        จบ     เพิ่มที่ละ1
-                for($i = 1; $i <= 12; $i++){
-                    echo $num . " x " . $i . "=" . $num * $i . "<br>";
-                }
+                $i = 1;
+                while ($i <= 12) {
+                    echo $num . "x" . $i . "=" . ($num * $i) . "<br>";
+                    $i++;
+                }    
             }
         ?>
     </div>
+  
     
 </body>
 </html>

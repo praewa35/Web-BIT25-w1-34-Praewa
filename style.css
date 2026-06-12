@@ -1,0 +1,63 @@
+body {
+    background-color: #fdfaf5;
+    margin: 0; 
+    padding: 20px;
+    /* 3 บรรทัดนี้ทำให้ทุกอย่างอยู่ตรงกลางแนวตั้งและแนวนอน */
+    display: flex;
+    flex-direction: column; /* จัดเรียงจากบนลงล่าง */
+    justify-content: center; /* จัดกึ่งกลางแนวตั้ง */
+    align-items: center;     /* จัดกึ่งกลางแนวนอน */
+
+}
+
+a {
+    display: inline-block;          /* ทำให้ตั้งค่าความกว้าง/สูงและ padding ได้ */
+    text-decoration: none;          /* เอาเส้นใต้ลิงก์ออก */
+    color: rgb(232, 116, 116);      
+    border: 1.5px solid rgb(234, 123, 123); /* สร้างเส้นขอบกรอบ */
+    padding: 6px 16px;              /* ระยะห่างระหว่างตัวอักษรกับขอบกล่อง */
+    border-radius: 20px;           
+    font-size: 0.95rem;
+    font-weight: bold;
+    background-color: #ffffff;     
+    margin-bottom: 20px;          
+}
+
+
+h1 {
+    color: rgb(232, 116, 116);
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+
+div {
+    background-color: rgb(255, 217, 176);
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(255, 110, 64, 0.05);
+    padding: 30px; 
+    width: 100%;
+    max-width: 400px; 
+    text-align: center;
+}
+
+input[type="submit"] {
+    background-color: #ffe78f; 
+    color: #333;
+    border: 1px solid #cb600e;
+    padding: 2%;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+input[type="submit"]:hover {
+    background-color: #f5dd93; /* เข้มขึ้นตอนเมาส์วาง */
+}
+
+input[type="number"] {
+    padding: 4px;
+    border: 1px solid #cca173;
+    border-radius: 5px;
+    text-align: center;
+    width: 90px;
+}
